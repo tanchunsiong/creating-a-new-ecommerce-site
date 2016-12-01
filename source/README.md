@@ -1,4 +1,4 @@
-﻿Creating an AbanteCart based e-commerce Virtual Machine on Azure
+﻿Creating an AbanteCart and Wordpress (woocommerce) based e-commerce Virtual Machine on Azure
 =======================================================================================
 
 The ability to create a virtual machine on demand, whether a standard image or from one you supply, can be very useful. This approach, commonly known as Infrastructure as a Service (IaaS), is what Azure Virtual Machines provides.
@@ -15,16 +15,18 @@ In this lab, you will learn how to create virtual machines using different optio
 
 This lab includes the following tasks:
 
-* [**Creating a Virtual Machine with AbanteCart Installed using Azure Portal**](#creating-a-vm-using-portal)
+* [**Creating a Virtual Machine with AbanteCart Installed using Azure Portal**](#creating-a-abantecart-vm-using-portal) 
 
-	In this task you will create a Windows virtual machine using an existing image from the Azure Management Portal.
+* [**Creating a Virtual Machine with Wordpress (woocommerce) Installed using Azure Portal**](#creating-a-wordpress-and-woocommerce-vm-using-portal)
+	
+    In this task you will create a Windows virtual machine using an existing image from the Azure Management Portal.
 
 
 There are various other ways to create the Virual Machine using Powershell, Azure Command Line Interface, or ARM templates.
 This lab will just demonstrate the usage of the Azure Portal to create an VM preinstalled with AbanteCart.
 
-<a name="creating-a-vm-using-portal"></a>
-## Creating a Virtual Machine using Azure Portal ##
+<a name="creating-a-abantecart-vm-using-portal"></a>
+## Creating a Virtual Machine with AbanteCart using Azure Portal ##
 
 In this task you will create a Virtual Machine in Azure Portal.
 If you do not already have an Azure Account, sign up for a [Trial Account](https://azure.microsoft.com/en-us/free/).
@@ -124,8 +126,108 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
     > You can find your login ID and Password by following the [guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
 
 
+<a name="creating-a-wordpress-and-woocommerce-vm-using-portal"></a>
+## Creating a Virtual Machine with Wordpress and WooCommerce using Azure Portal ##
 
+	## Creating a Virtual Machine with Wordpress and WooCommerce using Azure Portal ##
+
+In this task you will create a Virtual Machine in Azure Portal.
+If you do not already have an Azure Account, sign up for a [Trial Account](https://azure.microsoft.com/en-us/free/).
+
+1. Sign in to the [Azure Management Portal](https://portal.azure.com/).
+
+1. On the Left Side bar, click **+ NEW** and then click on **See all**.
+
+	![Creating VM - Click New and Everything](images/click-new-and-everything.png?raw=true)
+
+	_Creating a VM_ 
+
+1. Type in **Wordpress Bitnami**, Hit enter and then click the **Wordpress** tile.
+
+	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-wordpress.png?raw=true)
+
+	_Creating a VM - Search for Wordpress then select the Wordpress tile_
+
+1. In the **Wordpress** blade, **'Resource Manager'** from dropdown **select a deployment model** is choosen by default. Just click **Create**.
+
+	![Creating VM Confirm image](images/creating-vm-wordpress-confirm-image.png?raw=true)
+
+	_Creating a VM - Click Create to confirm the use of this image_
+
+1. On the **Create Virtual Machine** blade that opens, enter: 
+
+	* **Name**: virtual machine name (e.g. testvmforwordpress)
+	* **User Name**: administrator user for the virtual machine (e.g. azureuser). You cannot use root for security reasons.
+	* **Password**: Choose "Password" for ease of setup. In production environment, it is recommended to use SSH Keys.
+	* **Password**: unique password for the administrator account (e.g. pass@word123)
+	* **Subscription**: Select if you have multiple subscriptions
+	* **Resource**: New or Existing (e.g. create-vm). We recommend create 'Existing', choosing the same Resource group created previously for ease of cleaning up later.
+	* **Location**: select the location for the virtual machine. (e.g. Southeast Asia)
 	
+	![Creating a VM - basic configuration](images/create-vm-resource-basic-config-wordpress.png?raw=true)
+
+	_Creating a VM - Basic Configuration_
+	
+	* **Size**: select the size of virtual machine needed. (Select **View All** for checking all sizes and details)
+	
+	![Creating a VM - choose size](images/create-vm-resource-choose-size.png?raw=true)
+
+	_Creating a VM - Types of Sizes_
+	
+	* **Disk Type**: select the disk size. (e.g. Standard/Premium(SSD))
+	* **storage account**: storage account details(if existing select the storage account at specified location or create new)
+	* **virtual network**: virtual network for the virtual machine to create
+	* **Subnet**: subnets under one Virtual network
+	* **Public IP address**: public IP address
+
+	![Creating a VM - Settings Optional features](images/create-vm-resource-settings-config-wordress.png?raw=true)
+
+	_Creating a VM - Settings_
+	
+	* **Summary**: virtual machine summary details before you click on create.
+
+	![Creating a VM - VM Summary](images/create-vm-summary-wordpress.png?raw=true)
+
+	* **Summary**: Wordpress VM purchase details before you click on create.
+
+	![Creating a VM - VM Summary](images/create-vm-summary-wordpress-buy.png?raw=true)
+
+	_Creating a VM - Summary_
+
+	> **Note:** Premium storage, available for DS-series virtual machines in certain regions. For details, see [Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads](http://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/).
+
+
+1. Click **Purchase**.
+
+1. The VM will start being created. You can monitor the creation progress on the **Notifications**. As this can take a few minutes, this task ends here. 
+
+	![Creating a VM - Monitor progress on the Notifications](images/creating-vm-monitor-progress-on-the-notifi.png?raw=true)
+
+	_Creating a VM - Monitor progress in the Notifications Hub_
+
+	> **Note:** After the VM is created, the Virtual Machine blade will open. A pin for the VM (e.g. azureVM) is also added to the **Startboard**. You can use it to access the VM.  
+	>
+	>![Creating a VM - A pin in the startboard exists after creation](images/creating-vm-pin-in-startboard-after-creation.png?raw=true)
+	>
+	>_Creating a VM - A pin was created in the Startboard_
+
+	>Once the virtual machine has been created you can attach new or existing data disks to the Virtual Machine. See [About Virtual Machine Disks in Azure](https://msdn.microsoft.com/library/azure/dn790303.aspx) for more information. 
+	>
+	>![Creating a VM - A pin in the startboard exists after creation](images/create-vm-details-created.png?raw=true)
+	>
+	>_Virtual Machine details after Creation_
+
+
+## Setting up and Configuring Wordpress with WooCommerce##
+
+1. Copy your **Public IP address/DNS name** and paste it into your browser. You will be prompted to your Wordpress startpage.
+
+    ![Creating VM Confirm image](images/configuring-and-managing-wordpress.png?raw=true)
+    _Starting page of your abantecart_
+
+    > **Note:** Click on the bottom right hand corner to configure your instance.
+    > You can find your login ID and Password by following the [guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
+
 <a name="cleanup"></a>
 ##Appendix - Cleanup
 
