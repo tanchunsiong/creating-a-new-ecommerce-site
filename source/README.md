@@ -121,7 +121,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
     _Starting page of your abantecart_
 
     > **Note:** Click on the bottom right hand corner to configure your instance.
-    > You can find your login ID and Password by following the ![guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
+    > You can find your login ID and Password by following the [guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
 
 
 
