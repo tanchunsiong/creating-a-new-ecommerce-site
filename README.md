@@ -1,4 +1,4 @@
-﻿Creating an AbanteCart based e-commerce Virtual Machine on Azure
+Creating an AbanteCart based e-commerce Virtual Machine on Azure
 =======================================================================================
 
 The ability to create a virtual machine on demand, whether a standard image or from one you supply, can be very useful. This approach, commonly known as Infrastructure as a Service (IaaS), is what Azure Virtual Machines provides.
@@ -45,7 +45,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 1. In the **AbanteCart** blade, Select **'Resource Manager'** from dropdown **select a deployment model**, and then click **Create**.
 
-	![Creating VM Confirm image](images/creating-vm-abantecart-confirm-image.PNG?raw=true)
+	![Creating VM Confirm image](images/creating-vm-abantecart-confirm-image.png?raw=true)
 
 	_Creating a VM - Click Create to confirm the use of this image_
 
