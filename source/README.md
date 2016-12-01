@@ -33,7 +33,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 1. On the Left Side bar, click **+ NEW** and then click on **See all**.
 
-	![Creating VM - Click New and Everything](source/images/click-new-and-everything.png?raw=true)
+	![Creating VM - Click New and Everything](images/click-new-and-everything.png?raw=true)
 
 	_Creating a VM_ 
 
