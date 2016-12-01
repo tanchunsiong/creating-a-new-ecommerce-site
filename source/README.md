@@ -41,7 +41,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-abantecartserver.png?raw=true)
 
-	_Creating a VM - Click Virtual Machines then the Windows Server tile_
+	_Creating a VM - Search for AbanteCart then select the AbanteCart tile_
 
 1. In the **AbanteCart** blade, Select **'Resource Manager'** from dropdown **select a deployment model**, and then click **Create**.
 
@@ -56,14 +56,14 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 	* **Password**: Choose "Password" for ease of setup. In production environment, it is recommended to use SSH Keys.
 	* **Password**: unique password for the administrator account (e.g. pass@word123)
 	* **Subscription**: Select if you have multiple subscriptions
-	* **Resource**: New or Existing (e.g. create-vm). We recommend create New for ease of cleaning up later.
-	* **Location**: select the location for the virtual machine. (e.g. Souhteast Asia)
+	* **Resource**: New or Existing (e.g. create-vm). We recommend create 'New' for ease of cleaning up later.
+	* **Location**: select the location for the virtual machine. (e.g. Southeast Asia)
 	
 	![Creating a VM - basic configuration](images/create-vm-resource-basic-config.png?raw=true)
 
 	_Creating a VM - Basic Configuration_
 	
-	* **Size**: select the size of virtual machine needed. (Select **See All** for checking all sizes and details)
+	* **Size**: select the size of virtual machine needed. (Select **View All** for checking all sizes and details)
 	
 	![Creating a VM - choose size](images/create-vm-resource-choose-size.png?raw=true)
 
@@ -83,7 +83,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 	![Creating a VM - VM Summary](images/create-vm-summary.png?raw=true)
 
-	* **Summary**: virtual machine purchase details before you click on create.
+	* **Summary**: AbanteCart VM purchase details before you click on create.
 
 	![Creating a VM - VM Summary](images/create-vm-summary-buy.png?raw=true)
 
@@ -92,7 +92,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 	> **Note:** Premium storage, available for DS-series virtual machines in certain regions. For details, see [Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads](http://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/).
 
 
-1. Click **OK**.
+1. Click **Purchase**.
 
 1. The VM will start being created. You can monitor the creation progress on the **Notifications**. As this can take a few minutes, this task ends here. 
 
