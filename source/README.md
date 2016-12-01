@@ -125,6 +125,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
     > **Note:** Click on the bottom right hand corner to configure your instance.
     > You can find your login ID and Password by following the [guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
 
+For detailed configuration of Abante Cart which is out of scope for this hands on lab, refer to [abante cart quickstart guide here](http://docs.abantecart.com/pages/quickstart/checklist.html)
 
 <a name="creating-a-wordpress-and-woocommerce-vm-using-portal"></a>
 ## Creating a Virtual Machine with Wordpress and WooCommerce using Azure Portal ##
@@ -227,6 +228,22 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
     > **Note:** Click on the bottom right hand corner to configure your instance.
     > You can find your login ID and Password by following the [guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
+
+1. Once you are logged-in via (http://x.x.x.x/wp-admin), you will need to install woocommerce template
+    
+    >To install WooCommerce:
+
+    >Log into your WordPress Admin panel.
+
+    >Go to: Plugins > Add New.
+
+    >Type "WooCommerce" into the Search Plugins field and hit Enter. Once found, you can view details on the point release, rating and description.
+  
+    >Click Install Now. After clicking the link, you’ll be asked to confirm this action.
+    
+    >Click Yes, and WordPress completes the installation.
+
+For detailed configuration of woocommerce which is out of scope for this hands on lab, refer to [woocommerce official documentation here](https://docs.woocommerce.com/documentation/plugins/woocommerce/getting-started/)
 
 <a name="cleanup"></a>
 ##Appendix - Cleanup
