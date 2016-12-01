@@ -113,8 +113,15 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 	>_Virtual Machine details after Creation_
 
 
+## Setting up and Configuring AbanteCart##
 
+1. Copy your **Public IP address/DNS name** and paste it into your browser. You will be prompted to your AbanteCart startpage.
 
+    ![Creating VM Confirm image](images/configuring-and-managing-abantecart.png?raw=true)
+    _Starting page of your abantecart_
+
+    > **Note:** Click on the bottom right hand corner to configure your instance.
+    > You can find your login ID and Password by following the ![guide on bitnami]( https://docs.bitnami.com/azure/faq/#find_credentials)
 
 
 
