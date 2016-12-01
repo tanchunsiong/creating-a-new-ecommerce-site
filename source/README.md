@@ -39,13 +39,13 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 1. Type in **AbanteCart Bitnami**, Hit enter and then click the **Abante Server** tile.
 
-	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-abantecartserver.PNG?raw=true)
+	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-abantecartserver?raw=true)
 
 	_Creating a VM - Click Virtual Machines then the Windows Server tile_
 
 1. In the **AbanteCart** blade, Select **'Resource Manager'** from dropdown **select a deployment model**, and then click **Create**.
 
-	![Creating VM Confirm image](images/creating-vm-abantecart-confirm-image.PNG?raw=true)
+	![Creating VM Confirm image](images/creating-vm-abantecart-confirm-image.png?raw=true)
 
 	_Creating a VM - Click Create to confirm the use of this image_
 
