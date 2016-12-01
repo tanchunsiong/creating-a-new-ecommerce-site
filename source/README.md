@@ -39,7 +39,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 1. Type in **AbanteCart Bitnami**, Hit enter and then click the **Abante Server** tile.
 
-	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-abantecartserver?raw=true)
+	![Creating VM - Click Virtual Machines and Windows Server](images/creating-compute-vm-abantecartserver.png?raw=true)
 
 	_Creating a VM - Click Virtual Machines then the Windows Server tile_
 
