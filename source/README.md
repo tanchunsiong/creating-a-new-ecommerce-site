@@ -180,7 +180,7 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 	* **Subnet**: subnets under one Virtual network
 	* **Public IP address**: public IP address
 
-	![Creating a VM - Settings Optional features](images/create-vm-resource-settings-config-wordress.png?raw=true)
+	![Creating a VM - Settings Optional features](images/create-vm-resource-settings-config-wordpress.png?raw=true)
 
 	_Creating a VM - Settings_
 	
@@ -233,36 +233,31 @@ If you do not already have an Azure Account, sign up for a [Trial Account](https
 
 In this task you will learn how to delete the virtual machines created in the previous sections, along with the related data disks created. 
 
-### Remove VM using Azure Portal
+### Remove Resource Group using Azure Portal
 
-1. Scroll to the bottom on the left pane and Click **Browse >**. Then either search in the search box at the top or scroll down and find **Virtual machines (Classic)**.
+1. On the left pane and Click **Resource Groups**. Then search in the search box to find your resource group. I've named mine as **ecommercetest**.
 
-	![Clicking Browse in the left pane and search in the box](images/clicking-browse-virtualmachine.png?raw=true)
+	![Clicking Browse in the left pane and search in the box](images/clicking-browse-resourcegroup.png?raw=true)
 
 	_Clicking Browse in the left Menu_
 
-1. A page listing all Virtual Machines will be displayed. 
+1. A page listing all resource inside the Resource Group will be displayed. 
 
-	![Virtual Machines view in portal](images/virtual-machines-view-in-portal.png?raw=true)
+	![Virtual Machines view in portal](images/resource-group-view-in-portal.png?raw=true)
 
-	_Viewing all virtual machines created_
+	_Viewing all resources created_
 
-1. Click the **...** menu to find the virtual machine to delete and in the context menu that opens, click **Delete**.
+1. Click the **Delete** in the blade on your right, and you will be prompted with a confirmation screen. Type in the resource group name and click the **Delete** button.
 
-	![Deleting a virtual machine](images/deleting-a-virtual-machine.png?raw=true)
+	![Deleting a virtual machine](images/deleting-a-resource-group.png?raw=true)
 
-	_Deleting a virtual machine_
+	_Confirming and Deleting a resource group_
 
-1. In the **Confirmation** blade that opens, type the virtual machine name, select all other items to delete like disks and domain names, and click the **Delete** button.
 
-	![Confirming the deletion of virtual machine](images/confirming-the-deletion-of-virtual-machine.png?raw=true)
-
-	_Confirming the deletion of the virtual machine_
-
-The virtual machine as well as other items selected in the previous step will be deleted. You can monitor the progress of this operation from the **Notifications** Hub.
+The virtual machine(s) as well as other items selected in the previous step will be deleted. You can monitor the progress of this operation from the **Notifications** Hub.
 
 Once complete, the **Virtual Machines** list will refresh and the virtual machine recently deleted will no longer appear. Follow the same instructions to delete all other virtual machines created in this lab.
 
 ##Summary
 
-By completing this lab you have learned how to create virtual machines using several different methods: the Azure Portal interface, the Cross-Platform Command Line Tools, PowerShell and Automation Runbook. Additionally, you have seen how to attach an empty datadisk to the virtual machine, how to generate a Remote Desktop Protocol file to connect to the machine, and how to install extensions.
+By completing this lab you have learned how to create virtual machines using several different methods: the Azure Portal interface.
