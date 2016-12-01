@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>source</Name>
+    <RootNamespace>source</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c3325759-928e-47d2-a075-11abe90e2cb1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="images\adding-a-credential.png" />
+    <Content Include="images\adding-a-new-asset.png" />
+    <Content Include="images\adding-a-variable.png" />
+    <Content Include="images\addnsgrule-outbound.png" />
+    <Content Include="images\attached-disk-ready-to-be-used.png" />
+    <Content Include="images\attaching-new-disk-created.png" />
+    <Content Include="images\attaching-new-disk-to-vm-monitoring.png" />
+    <Content Include="images\backup-database.png" />
+    <Content Include="images\checking-storage-accounts.png" />
+    <Content Include="images\click-file-and-storage-services.png" />
+    <Content Include="images\click-new-and-everything.png" />
+    <Content Include="images\clicking-add-user-to-administrators.png" />
+    <Content Include="images\clicking-add-user.png" />
+    <Content Include="images\clicking-administrators-in-settings.png" />
+    <Content Include="images\clicking-browse-in-the-hub-menu.png" />
+    <Content Include="images\clicking-browse-virtualmachine.png" />
+    <Content Include="images\clicking-disks-in-file-and-storage-services.png" />
+    <Content Include="images\clicking-the-users-tab-for-the-directory.png" />
+    <Content Include="images\clicking-the-view-job-button.png" />
+    <Content Include="images\clicking-yes-to-save-the-key.png" />
+    <Content Include="images\completing-the-form-in-the-start-runbook.png" />
+    <Content Include="images\confirm-initialization-of-disk.png" />
+    <Content Include="images\confirming-the-deletion-of-virtual-machine-1.png" />
+    <Content Include="images\confirming-the-deletion-of-virtual-machine.png" />
+    <Content Include="images\connecting-to-the-machine.png" />
+    <Content Include="images\create-architecture-diagram-vm.png" />
+    <Content Include="images\create-vm-arm-dashboard.png" />
+    <Content Include="images\create-vm-arm-parameters.png" />
+    <Content Include="images\create-vm-details-created.png" />
+    <Content Include="images\create-vm-resource-basic-config.png" />
+    <Content Include="images\create-vm-resource-choose-size.png" />
+    <Content Include="images\create-vm-resource-settings-config.png" />
+    <Content Include="images\create-vm-summary-buy.PNG" />
+    <Content Include="images\create-vm-summary.png" />
+    <Content Include="images\creating-a-new-runbook-and-account.png" />
+    <Content Include="images\creating-a-new-runbook.png" />
+    <Content Include="images\creating-a-new-storage-account.png" />
+    <Content Include="images\creating-a-variable-for-the-subscription-name.png" />
+    <Content Include="images\creating-compute-vm-abantecartserver.PNG" />
+    <Content Include="images\creating-compute-vm-winserver.png" />
+    <Content Include="images\creating-new-volume.png" />
+    <Content Include="images\creating-the-vm-credentials.png" />
+    <Content Include="images\creating-vm---click-new-and-everything.png" />
+    <Content Include="images\creating-vm-abantecart-confirm-image.PNG" />
+    <Content Include="images\creating-vm-click-vms-and-windows-server.png" />
+    <Content Include="images\creating-vm-confirm-image -1.png" />
+    <Content Include="images\creating-vm-confirm-image.png" />
+    <Content Include="images\creating-vm-enter-vm-name-user-name-and-passw.png" />
+    <Content Include="images\creating-vm-monitor-progress-on-the-notifi-1.png" />
+    <Content Include="images\creating-vm-monitor-progress-on-the-notifi.png" />
+    <Content Include="images\creating-vm-pin-in-startboard-after-creation-1.png" />
+    <Content Include="images\creating-vm-pin-in-startboard-after-creation.png" />
+    <Content Include="images\creating-vm-select-image.png" />
+    <Content Include="images\creating-vm-with-powershell-output.png" />
+    <Content Include="images\deleting-a-virtual-machine-1.png" />
+    <Content Include="images\deleting-a-virtual-machine.png" />
+    <Content Include="images\deploying-template-deployment-status.png" />
+    <Content Include="images\enter-admin-user-credentials.png" />
+    <Content Include="images\executing-fdisk-in-the-vm.png" />
+    <Content Include="images\get-azureremotedesktopfile-output.png" />
+    <Content Include="images\get-azurestorageaccount-output.png" />
+    <Content Include="images\get-azurevm-output---list-all-vms.png" />
+    <Content Include="images\get-azurevmextension-output.png" />
+    <Content Include="images\getazuresubscription-output-no-storage-accoun.png" />
+    <Content Include="images\inetpub.png" />
+    <Content Include="images\initialize-the-disk.png" />
+    <Content Include="images\log-on-to-the-vm.png" />
+    <Content Include="images\login-user.png" />
+    <Content Include="images\navigating-to-assets.png" />
+    <Content Include="images\navigating-to-edit-runbook.png" />
+    <Content Include="images\navigating-to-the-automation-account.png" />
+    <Content Include="images\newvolumewizard-file-system-settings-step.png" />
+    <Content Include="images\newvolumewizard-size-step.png" />
+    <Content Include="images\opening-the-rdp-file.png" />
+    <Content Include="images\opening-the-vm-settings.png" />
+    <Content Include="images\openning-the-connection-to-the-vm.png" />
+    <Content Include="images\organizational-account-created.png" />
+    <Content Include="images\output-demo.png" />
+    <Content Include="images\publishing-the-runbook.png" />
+    <Content Include="images\runbook-gallery.png" />
+    <Content Include="images\running-add-azureaccount.png" />
+    <Content Include="images\saving-and-publishing-the-runbook.png" />
+    <Content Include="images\seeing-the-details-about-the-disk.png" />
+    <Content Include="images\set-azurevmextension-output.png" />
+    <Content Include="images\setting-the-user-and-password-for-the-vm.png" />
+    <Content Include="images\setting-the-value-for-the-subscription-name.png" />
+    <Content Include="images\starting-the-runbook.png" />
+    <Content Include="images\succeeded-arm-template.png" />
+    <Content Include="images\update-azurevm-output-after-adding-a-datadisk.png" />
+    <Content Include="images\user-added-as-co-administrator.png" />
+    <Content Include="images\using-the-remote-virtual-machine.png" />
+    <Content Include="images\validating-that-the-vm-was-created.png" />
+    <Content Include="images\verify-virtual-machine-identity.png" />
+    <Content Include="images\viewing-active-directories.png" />
+    <Content Include="images\virtual-machines-view-in-portal - 1.png" />
+    <Content Include="images\virtual-machines-view-in-portal.png" />
+    <Content Include="images\waiting-for-the-job-to-complete.png" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
